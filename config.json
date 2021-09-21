@@ -1,0 +1,50 @@
+{
+    "last_scraped_date": {
+        "value": null,
+        "description": "Last Scrapped Date [String]: Last date upto which news articles were scrapped (starting from `start_date`). Must follow format DD-MM-YYYY e.g. 21-01-2010. (Default None)"
+    },
+    "limit": {
+        "value": 100,
+        "description": "Limit [Integer]: Number of articles to fetch in one request. Must be non-negative integer value. Preferable range [10, 300]. (Default 100)"
+    },
+    "log_directory": {
+        "value": "./logs",
+        "description": "Log Directory [String]: Directory path where log files should be stored. (Default ./logs)"
+    },
+    "log_level": {
+        "value": 10,
+        "description": "Log Level [Integer]: Log level of Python Logger. (Default 20)"
+    },
+    "max_attempts": {
+        "value": 10,
+        "description": "Max Attempts [Integer]: Max number of attempts a request can fail before moving on. (Default 10)"
+    },
+    "max_sleep_time": {
+        "value": 10,
+        "description": "Max Sleep Time [Integer]: Maximum number of seconds the scraper can sleep in between requests. (Default 10)"
+    },
+    "min_sleep_time": {
+        "value": 2,
+        "description": "Min Sleep Time [Integer]: Minimum number of seconds the scraper must sleep in between requests. (Default 2)"
+    },
+    "output_directory": {
+        "value": "./output",
+        "description": "Output Directory [String]: Directory path where news articles are to be saved. (Default ./output)"
+    },
+    "log_message_format": {
+        "value": "%(asctime)s:%(levelname)s:%(module)s.%(funcName)s(%(lineno)d): %(message)s",
+        "description": "Log Message Format [String]: Log format for Python logger."
+    },
+    "start_date": {
+        "value": "01-01-2010",
+        "description": "Start Date [String]: Date from which news articles should be scrapped. Must follow format DD-MM-YYYY. (Default 01-01-2010)"
+    },
+    "threshold": {
+        "value": 1,
+        "description": "Threshold [Integer]: Number of days whose articles should be fetched together. (Default 1)"
+    },
+    "total": {
+        "value": 0,
+        "description": "Total [Integer]: Number of articles scrapped so far. (Default 0)"
+    }
+}
